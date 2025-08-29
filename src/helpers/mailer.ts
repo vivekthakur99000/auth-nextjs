@@ -33,7 +33,7 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
       from: "vivek@gmail.com",
       to: email,
       subject:
-        emailType === "VERIFY" ? "Verify your email" : "Reset your password",
+      emailType === "VERIFY" ? "Verify your email" : "Reset your password",
       html: `
             <div style="font-family: Arial, sans-serif; padding: 20px;">
                 <h2>Email Verification</h2>
